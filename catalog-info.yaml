@@ -1,0 +1,17 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-copilot-ecs-service
+  description: test
+  namespace: default
+  annotations:
+    github.com/project-slug: ServerlessOpsIO/test-copilot-ecs-service
+spec:
+  type: container-service
+  lifecycle: production
+  owner: group:default/developers
+  system: system:default/backstage
+  dependsOn:
+    - component:default/test-copilot-ecs-cluster
+    - resource:default/aws-796973489093

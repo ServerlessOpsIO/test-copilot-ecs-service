@@ -1,0 +1,19 @@
+{
+  "Domain": "devtools",
+  "System": "backstage",
+  "Component": $env.GITHUB_REPOSITORY_NAME_PART_SLUG_CS,
+  "CodeBranch": $env.GITHUB_REF_SLUG_CS,
+  "ClusterName": "/devtools/backstage/test-copilot-ecs-cluster/main/EcsClusterName",
+  "ClusterTaskIamRoleArn": "/devtools/backstage/test-copilot-ecs-cluster/main/EcsTaskExecutionIamRoleArn",
+  "ClusterSecurityGroupId": "/devtools/backstage/test-copilot-ecs-cluster/main/ContainerSecurityGroupId",
+  "ClusterAlbListenerArn": "/devtools/backstage/test-copilot-ecs-cluster/main/EcsAlbListenerArn",
+  "ContainerImage": "ghcr.io/github-copilot-resources/copilot-metrics-viewer",
+  "ContainerTag": "latest",
+  "ContainerCpu": "1024",
+  "ContainerMemory": "2048",
+  "ContainerDesiredCount": "3",
+  "ContainerPort": "8080","AlbRulePriority": "1",
+  "AlbRulePath": "*",
+  "VpcId": "/org/networking/VpcId",
+  "VpcSubnets": "/org/networking/VpcPublicSubnets"
+}
