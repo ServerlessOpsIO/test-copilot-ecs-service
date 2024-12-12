@@ -107,13 +107,11 @@ Resources:
       ContainerDefinitions:
         - Name: !Ref Component
           Image: !Sub '${ContainerImage}:${ContainerTag}'
-
           PortMappings:
             - ContainerPort: !Ref ContainerPort
-
-          #Environment:
-          #  - Name: VARIABLE
-          #    Value: !Ref Parameter
+          Environment:
+            - Name: VUE_APP_MOCKED_DATA
+              Value: true
           LogConfiguration:
             LogDriver: awslogs
             Options:
