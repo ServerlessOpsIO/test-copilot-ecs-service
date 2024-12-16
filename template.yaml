@@ -112,6 +112,10 @@ Resources:
           Environment:
             - Name: VUE_APP_MOCKED_DATA
               Value: true
+            - Name: VUE_APP_SCOPE
+              Value: organization
+            - Name: VUE_APP_GITHUB_ORG
+              Value: octodemo
           LogConfiguration:
             LogDriver: awslogs
             Options:
