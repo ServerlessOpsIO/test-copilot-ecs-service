@@ -10,7 +10,7 @@
   "ContainerImage": "ghcr.io/github-copilot-resources/copilot-metrics-viewer",
   "ContainerTag": "latest",
   "ContainerCpu": "1024",
-  "ContainerMemory": "1024",
+  "ContainerMemory": "2024",
   "ContainerDesiredCount": "1",
   "ContainerPort": "80",
   "AlbRulePriority": "1",
